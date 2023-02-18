@@ -39,7 +39,7 @@ class ActiveRecord {
         // Mensaje de exito o error
         if($resultado) {
             // Redireccionar al usuario
-            header('Location: /public/admin?resultado=1');
+            header('Location: /admin?resultado=1');
         }
     }
     public function actualizar() {
@@ -58,7 +58,7 @@ class ActiveRecord {
         $resultado = self::$db->query($query);
         if($resultado) {
             // Redireccionar al usuario
-            header('Location: /public/admin?resultado=2');
+            header('Location: /admin?resultado=2');
         }
     }
     // Eliminar un registro
@@ -67,7 +67,7 @@ class ActiveRecord {
         $resultado = self::$db->query($query);
         if($resultado) {
             $this->borrarImagen();
-            header('Location: /public/admin?resultado=3');
+            header('Location: /admin?resultado=3');
         }
     }
     // Identificar y unir los atributos de la BD

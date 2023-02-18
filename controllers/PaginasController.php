@@ -25,7 +25,7 @@ class PaginasController {
         ]);
     }
     public static function propiedad(Router $router) {
-        $id = validarORedireccionar('/public/propiedades');
+        $id = validarORedireccionar('/propiedades');
         $propiedad = Propiedad::find($id);
         $router->render('paginas/propiedad', [
             'propiedad' => $propiedad
@@ -50,12 +50,11 @@ class PaginasController {
 
             // Configurar SMTP
             $mail->isSMTP();
-            $mail->Host = 'smtp.mailtrap.io';
+            $mail->Host = $_ENV['EMAIL_HOST'];
             $mail->SMTPAuth = true;
-            $mail->Username = '32d1bafaec01db';
-            $mail->Password = 'f6338d0ce5ba75';
-            $mail->STMPSecure = 'tls';
-            $mail->Port = 2525;
+            $mail->Username = $_ENV['EMAIL_USER'];
+            $mail->Password = $_ENV['EMAIL_PASSWORD'];
+            $mail->Port = $_ENV['EMAIL_PORT'];
 
             // Configurar el contenido del mail
             $mail->setFrom('admin@bienesraices.com');

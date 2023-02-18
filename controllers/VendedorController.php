@@ -32,7 +32,7 @@ class VendedorController {
     }
     public static function actualizar(Router $router) {
 
-        $id = validarORedireccionar('/public/admin');
+        $id = validarORedireccionar('/admin');
         $vendedor = Vendedor::find($id);
 
         $errores = Vendedor::getErrores();

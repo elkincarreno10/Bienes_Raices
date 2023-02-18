@@ -7,7 +7,7 @@
         </div>
         <?php endforeach; ?>
 
-        <a href="/public/admin" class="boton boton-verde">Volver</a>
+        <a href="/admin" class="boton boton-verde">Volver</a>
 
         <form class="formulario" method="POST" action="/vendedores/crear">
             <?php include __DIR__ . '/formulario.php'; ?>

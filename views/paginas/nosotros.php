@@ -4,9 +4,9 @@
         <div class="contenido-nosotros">
             <div class="imagen">
                 <picture>
-                    <source srcset="/public/build/img/nosotros.webp" type="image/webp">
-                    <source srcset="/public/build/img/nosotros.jpg" type="image/jpeg">
-                    <img src="/public/build/img/nosotros.jpg" alt="Sobre Nosotros">
+                    <source srcset="/build/img/nosotros.webp" type="image/webp">
+                    <source srcset="/build/img/nosotros.jpg" type="image/jpeg">
+                    <img src="/build/img/nosotros.jpg" alt="Sobre Nosotros">
                 </picture>
             </div>
             <div class="texto-nosotros">

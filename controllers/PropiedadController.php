@@ -70,7 +70,7 @@ class PropiedadController {
     }
     public static function actualizar(Router $router) {
 
-        $id = validarORedireccionar('/public/admin');
+        $id = validarORedireccionar('/admin');
         $propiedad = Propiedad::find($id);
 
         $vendedores = Vendedor::all();

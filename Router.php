@@ -31,7 +31,7 @@ class Router {
         }
         // Proteger las rutas
         if(in_array($urlActual, $rutas_protegidas) && !$auth) {
-            header('Location: /public');
+            header('Location: /');
         }
 
         if($fn) {
